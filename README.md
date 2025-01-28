@@ -1,13 +1,18 @@
-# Image-Gallery-Project
-Students will design an image gallery project that showcases a minimum of 9 image thumbnails related to a theme, and these thumbnails link to a full-sized image.
+# Landing-Page-Project
+Students will craft a single landing page project and demonstrate a variety of HTML and CSS code by crafting a header, navbar, and HTML content including images, headings, paragraphs, lists, and links, and adding the following design elements: typography, color, negative space, as well as style a horizontal navbar.
 
 ## Project Requirements
-Are listed in the README file in the `image_gallery` folder.
+Are listed in the README file in the `project` folder.
 You must meet all requirements in the following areas:
-* HTML - meet specific elements
-* Validity - passes the W3C Validator (HTML and CSS)
+* HTML - meet specific elements including HTML validation
 * CSS - meet specific CSS requirements (layout, colors & fonts)
 * Design - your design score will be assessed based on the video captures &/or screen captures (you'll want to see the rubric in the assignment description for the course)
+
+## Tests
+* `test_html` - tests for main HTML requirements (including html validation)
+* `test_html_exceeds` - checks to see if student has gone above and beyond in elements
+* `test_css` - tests for color contrast, a font-pairing, and other applied styles (including CSS validation)
+* `test_css_exceeds` - checks to see if student has gone above and beyond with advanced properties
 
 ## Instructions
 1. Place all of your project files (HTML, CSS, images, etc.) into the simple_html_page folder.

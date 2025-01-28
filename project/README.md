@@ -1,17 +1,15 @@
-# Image Gallery Project
+# Landing Page Project
 Put your html and css files in here.
 
 ## Goal:
-Students will code and design an image gallery project that contains a minimum of 9 related thumbnail-sized images that when clicked open up a full-sized version of those images. The design of the layout should be a grid of images that are styled using fonts, colors, borders, and other styles.
+Students will craft a single landing page project and demonstrate a variety of HTML and CSS code by crafting a header, navbar, and HTML content including images, headings, paragraphs, lists, and links, and adding the following design elements: typography, color, negative space, as well as style a horizontal navbar.
 
 ## Requirements
 ### Folder and file structure requirements
 * Create a single web page named `index.html`
 * Create a folder titled, `images` (all lowercase letters)
-* at least 18 images in all (each stored in the images folder)
-  - at least 9 full-sized images
-  - at least 9 thumbnail (cropped and resized to no wider than 450px) 
-    + one for each of the full-sized images
+* at least 3 images in all (each stored in the images folder)
+    - these images should be about 400px or so
 
 ### HTML requirements
 * A single web page (HTML file)
@@ -19,14 +17,24 @@ Students will code and design an image gallery project that contains a minimum o
 * All standard HTML5 required tags (`DOCTYPE`, `html`, `head`, `title`, `body`)
 * A title (using the proper tag)
 * A `header` element with your title (in a `h1` tag)
-* A `main` element where you'll put all your `figure` elements.
-* A minimum of 9 `figure` elements
+* A `main` element where you'll put your content.
+* A `nav` element with an unordered list of links for your navbar
+* At least 5 paragraphs.
+* At least 2 `h2` titles.
+* At least two lists (`ul` or `ol`) each with at least 3 list items (minimum 7 list items in all).
+    - Note: one of the lists should go in the nav and have a least 4 list items
+* A minimum of 3 `figure` elements.
 * Each `figure` element needs to contain the following
     - A thumbnail image (no wider than 450px)
         - The image tag must contain a brief description using the `alt` attribute
-    - Wrap a link around the image that will link to the full-sized image
     - Add a caption after the link and image with appropriate credit given (should be a `figcaption` surrounding a `cite` tag)
     - Unless you took the image yourself, the caption should also link to the source of the image.
+* **To exceeds in HTML**, there should be at least...
+    - 7 paragraphs
+    - 4 figure tags each with an image
+    - 3 lists (`ol` or `li` or `dl`)
+    - if you include a `dl`, you need at least 4 `dt`s and 4 `dd`s
+    - At least 12 `li`s in all
 
 ### Validity Requirements
 * No HTML errors (this will be tested in the html tests)
@@ -38,14 +46,22 @@ Students will code and design an image gallery project that contains a minimum o
 * Any color or background color set on an element passes the AIM color contrast checker
     - Must pass at a AAA rating for any non-heading
     - May pass at a AA rating for headings
-* The container uses the `flex` property and related flex properties to contribute to the layout.
-* The figures are styled using the `margin`, `border`, `padding`, and `background-color` properties
+* The figure tag should have a float applied (left or right)
+* The figures are styled using the `border`, `padding`, and `background-color` properties (`margin` is optional but recommended)
+* **To exceeds in CSS**...
+    - The figure element should have at least two of the 3 advanced properties applied: `box-shadow`, `border-radius`, or `animation`
+    - The navbar or the ul inside the nav should have a display of `flex`.
+    - The list item in the nav should have a list style type of `none`.
+    - The link inside the nav, should have a display of `block`.
+    - The link inside the nav, should also have a hover effect applied.
 
 ### Design Requirements
 * Content must be visible and readable (with high contrast)
 * Images are all related in some way (through topic or theme)
-* Fonts, colors, and any other styling is consistent with the theme of the images
-* Layout is fluid and works on any browser/viewport width
+* Fonts, colors, and any other styling is consistent with the theme of the page
+* **To exceeds in design**...
+    - There should be a background image applied to the header with a height set and a title that is readable.
+    - 
 
 ### Assignment Submission Requirements
 * Student must commit and push their changes to the repo (repo has the latest work)

@@ -20,10 +20,14 @@ required_elements = [("doctype", 1),
                      ("footer", 1)]
 
 min_required_elements = [
-    ("figure", 9),
-    ("img", 9),
-    ("a", 9),
-    ("figcaption", 9)]
+    ("figure", 3),
+    ("img", 3),
+    ("nav", 1),
+    ("a", 5),
+    ("figcaption", 3),
+    ("p", 5),
+    ("ul or ol", 2),
+    ("li", 3)]
 
 exact_number_of_elements = html.get_number_of_elements_per_file(
     project_dir, required_elements
@@ -67,15 +71,9 @@ def test_files_for_minimum_number_of_elements(file, element, num):
     assert actual >= num
 
 
-def test_passes_html_validation(html_files):
-    errors = []
-    if not html_files:
-        assert "html files" in html_files
-    for file in html_files:
-        results = validator.get_markup_validity(file)
-        for result in results:
-            errors.append(result.get("message"))
-    assert not errors
+@pytest.mark.parametrize("results", html_validation_results)
+def test_passes_html_validation(results):
+    assert "pass:" in results
 
 
 def test_number_of_image_files_for_proficient():
@@ -84,4 +82,5 @@ def test_number_of_image_files_for_proficient():
     image_files += clerk.get_all_files_of_type(project_dir, "png")
     image_files += clerk.get_all_files_of_type(project_dir, "gif")
     image_files += clerk.get_all_files_of_type(project_dir, "webp")
-    assert len(image_files) >= 18
+    image_files += clerk.get_all_files_of_type(project_dir, "svg")
+    assert len(image_files) >= 3
