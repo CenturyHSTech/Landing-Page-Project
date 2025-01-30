@@ -46,5 +46,5 @@ def test_for_dl_and_children(file):
     num_dl = html.get_num_elements_in_file("dl", file)
     if num_dl:
         num_dt = html.get_num_elements_in_file("dt", file)
-        num_dd = html.get_all_html_files("dd", file)
+        num_dd = html.get_num_elements_in_file("dd", file)
         assert num_dt >= 4 and num_dd >= 4

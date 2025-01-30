@@ -29,38 +29,38 @@ header_color_rule_data = css.get_heading_color_report(project_dir)
 
 @pytest.mark.parametrize("results", style_attributes_in_project)
 def test_css_for_no_style_attributes(results):
-    assert "pass" == results[:4]
+    assert "pass" in results
 
 
 @pytest.mark.parametrize("results", css_validation_results)
 def test_css_validation(results):
-    assert "pass" == results[:4]
+    assert "pass" in results
 
 
 @pytest.mark.parametrize("results", applying_styles_results)
 def test_if_file_applies_styles(results):
-    assert "pass" == results[:4]
+    assert "pass" in results
 
 
 @pytest.mark.parametrize("results",
                          color_contrast_results)
 def test_color_contrast(results):
-    assert "pass" == results[:4]
+    assert "pass" in results
 
 
 @pytest.mark.parametrize("results", font_data)
 def test_font_requirements(results):
-    assert "pass" == results[:4]
+    assert "pass" in results
 
 
 @pytest.mark.parametrize("results", header_color_rule_data)
 def test_for_colors_applied_to_headings(results):
-    assert "pass" == results[:4]
+    assert "pass" in results
 
 
 applied_properties_goals = {
         "figure": {
-            "properties": ("margin", "padding", "border"),
+            "properties": ("background-color", "padding", "border"),
         }
     }
 
@@ -68,7 +68,7 @@ applied_properties_report = css.get_properties_applied_report(
     project_dir,
     applied_properties_goals)
 
-
+print()
 @pytest.mark.parametrize("results", applied_properties_report)
 def test_figure_styles_applied(results):
-    assert "fail:" not in results[:5]
+    assert "pass" in results

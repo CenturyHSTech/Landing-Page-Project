@@ -57,11 +57,14 @@ Students will craft a single landing page project and demonstrate a variety of H
 
 ### Design Requirements
 * Content must be visible and readable (with high contrast)
+* Paragraphs should not be too wide (no more than 79 characters per line)
 * Images are all related in some way (through topic or theme)
 * Fonts, colors, and any other styling is consistent with the theme of the page
 * **To exceeds in design**...
     - There should be a background image applied to the header with a height set and a title that is readable.
-    - 
+    - Colors and fonts should be pleasing and well chosen
+    - There should be a navbar that looks like a professional navbar with a hover effect.
+    - NOTE: if project is exceeds in CSS and HTML and all styles look intentional and not broken.
 
 ### Assignment Submission Requirements
 * Student must commit and push their changes to the repo (repo has the latest work)
